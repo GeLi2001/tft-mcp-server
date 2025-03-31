@@ -12,34 +12,40 @@ This is a Model Context Protocol (MCP) server for Team Fight Tactics (TFT) that 
 - Node.js (v14 or higher)
 - npm or yarn
 - Riot Games API Key (for accessing TFT data)
-
-## Installation
-
-1. Clone the repository
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Build the project:
-
-```bash
-npm run build
-```
+- Your Game Name, accessed from your Riot game console
+- Your Name Tagline, accessed from your Riot game console, which is usually followed/shown right after your Game Name. For example: `NA1`
 
 ## Usage
 
-1. Start the server with required parameters:
+1. Configure the MCP server in your Claude Desktop config file:
 
-```bash
-npm start -- --apiKey "YOUR_RIOT_API_KEY" --gameName "SUMMONER_NAME" --tagLine "TAG_LINE"
-```
+### MacOS
 
-Or using short options:
+Location: `~/Library/Application Support/Claude/claude_desktop_config.json`
 
-```bash
-npm start -- -k "YOUR_RIOT_API_KEY" -n "SUMMONER_NAME" -t "TAG_LINE"
+### Windows
+
+Location: `%APPDATA%/Claude/claude_desktop_config.json`
+
+Add the following configuration:
+
+```json
+{
+  "mcpServers": {
+    "tft-mcp": {
+      "command": "npx",
+      "args": [
+        "mcp-server-tft",
+        "--apiKey",
+        "<YOUR_RIOT_API_KEY>",
+        "--gameName",
+        "<YOUR_GAME_NAME>",
+        "--tagLine",
+        "<YOUR_TAG_LINE>"
+      ]
+    }
+  }
+}
 ```
 
 2. The server will run on stdio and provide the following tools:
