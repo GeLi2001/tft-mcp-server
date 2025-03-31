@@ -12,6 +12,8 @@ This is a Model Context Protocol (MCP) server for Team Fight Tactics (TFT) that 
 - Node.js (v14 or higher)
 - npm or yarn
 - Riot Games API Key (for accessing TFT data) - Get it from [Riot Games Developer Portal](https://developer.riotgames.com/)
+  - Note: For development, you can use a temporary API key that expires in 24 hours
+  - For production use, you'll need to apply for a permanent personal API key at [Riot's Application Portal](https://developer.riotgames.com/app-type)
 - Your Game Name, accessed from your Riot game console
 - Your Name Tagline, accessed from your Riot game console, which is usually followed/shown right after your Game Name. For example: `NA1`
 
