@@ -24,12 +24,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeLi2001/mcp-server-tft.git"
+    "url": "git+https://github.com/GeLi2001/tft-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/GeLi2001/mcp-server-tft/issues"
+    "url": "https://github.com/GeLi2001/tft-mcp-server/issues"
   },
-  "homepage": "https://github.com/GeLi2001/mcp-server-tft#readme",
+  "homepage": "https://github.com/GeLi2001/tft-mcp-server#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.8.0",
     "node-fetch": "^3.3.2",
