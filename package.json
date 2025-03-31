@@ -1,6 +1,6 @@
 {
   "name": "mcp-server-tft",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MCP Server for Team Fight Tactics (TFT)",
   "main": "dist/index.js",
   "type": "module",
